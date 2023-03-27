@@ -4,3 +4,6 @@
 [submodule "ms-user"]
 	path = ms-user
 	url = https://github.com/JimmyC001/ms-user-proyecto.git
+[submodule "cattleya"]
+	path = cattleya
+	url = https://github.com/JimmyC001/client-proyecto.git
