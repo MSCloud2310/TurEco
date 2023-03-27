@@ -10,3 +10,6 @@
 [submodule "ms-provider"]
 	path = ms-provider
 	url = https://github.com/JimmyC001/ms-provider-proyecto.git
+[submodule "ms-service"]
+	path = ms-service
+	url = https://github.com/JimmyC001/ms-services-proyecto.git
