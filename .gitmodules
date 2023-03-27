@@ -7,3 +7,6 @@
 [submodule "cattleya"]
 	path = cattleya
 	url = https://github.com/JimmyC001/client-proyecto.git
+[submodule "ms-provider"]
+	path = ms-provider
+	url = https://github.com/JimmyC001/ms-provider-proyecto.git
