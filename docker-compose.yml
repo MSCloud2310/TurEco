@@ -1,0 +1,43 @@
+version: "3"
+services:
+  eureka:
+    build:
+      context: /eureka-proyecto
+      dockerfile: dockerfile
+    networks:
+      - net-client
+      - net-service
+      - net-provider
+    network_mode: bridge
+    container_name: eureka-proyecto
+  client:
+    build: 
+      context: /cattleya
+      dockerfile: dockerfile
+    networks:
+      - net-client
+    network_mode: bridge
+    container_name: client-proyecto
+  service:
+    build:
+      context: /ms-services-proyecto
+      dockerfile: dockerfile
+    networks:
+      - net-service
+    network_mode: bridge
+    container_name: service-proyecto
+  provider:
+    build: 
+      context: /ms-provider
+      dockerfile: dockerfile
+    networks:
+      - net-provider
+    network_mode: bridge
+    container_name: service-provider
+networks:
+  net-service:
+    external: false
+  net-client:
+    external: false
+  net-provider:
+    external: false
