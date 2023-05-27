@@ -19,3 +19,6 @@
 [submodule "eureka"]
 	path = eureka
 	url = https://github.com/JimmyC001/eureka-proyecto.git
+[submodule "ms-customer"]
+	path = ms-customer
+	url = https://github.com/JimmyC001/ms-customer-proyecto.git
