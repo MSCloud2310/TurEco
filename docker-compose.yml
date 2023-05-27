@@ -2,7 +2,7 @@ version: "3"
 services:
   eureka:
     build:
-      context: /eureka-proyecto
+      context: /eureka
       dockerfile: dockerfile
     networks:
       - net-client
@@ -20,7 +20,7 @@ services:
     container_name: client-proyecto
   service:
     build:
-      context: /ms-services-proyecto
+      context: /ms-service
       dockerfile: dockerfile
     networks:
       - net-service
@@ -33,7 +33,7 @@ services:
     networks:
       - net-provider
     network_mode: bridge
-    container_name: service-provider
+    container_name: provider-proyeto
 networks:
   net-service:
     external: false
